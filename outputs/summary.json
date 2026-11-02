@@ -1,6 +1,6 @@
 {
   "benchmark": "Agent Cancellation Propagation Benchmark",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "synthetic_scenarios": 6000,
   "policies": [
     "cooperative",

@@ -7,4 +7,7 @@ class BenchmarkTests(unittest.TestCase):
  def test_blind_continues(self):
   x=simulate({"workflow_depth":5,"cancel_after_step":2,"in_flight_calls":2,"side_effect_step":4},"cancellation_blind"); self.assertEqual(x["post_cancel_dispatches"],3); self.assertEqual(x["post_cancel_side_effects"],1)
  def test_summary_shape(self): self.assertEqual(len(summarize(evaluate(generate_scenarios(3,(11,)))),),4)
+ def test_polling_compliance_is_zero_by_rule(self):
+  # Polling always lets one call out when steps remain, so strict compliance is 0 by construction.
+  for r in generate_scenarios(50,(11,)): self.assertEqual(simulate(r,"polling")["cancel_compliance"],0)
 if __name__=="__main__": unittest.main()
