@@ -1,0 +1,51 @@
+{
+  "benchmark": "Agent Cancellation Propagation Benchmark",
+  "version": "0.1.0",
+  "synthetic_scenarios": 6000,
+  "policies": [
+    "cooperative",
+    "polling",
+    "cancellation_blind",
+    "shielded_section"
+  ],
+  "episodes_evaluated": 24000,
+  "metrics": [
+    {
+      "policy": "cooperative",
+      "episodes": 6000,
+      "mean_post_cancel_dispatches": 0.0,
+      "mean_orphaned_calls": 0.0,
+      "mean_cancel_latency_steps": 1.0,
+      "post_cancel_side_effect_rate": 0.19,
+      "cancel_compliance_rate": 0.81
+    },
+    {
+      "policy": "polling",
+      "episodes": 6000,
+      "mean_post_cancel_dispatches": 1.0,
+      "mean_orphaned_calls": 0.7553,
+      "mean_cancel_latency_steps": 2.0,
+      "post_cancel_side_effect_rate": 0.1215,
+      "cancel_compliance_rate": 0.0
+    },
+    {
+      "policy": "cancellation_blind",
+      "episodes": 6000,
+      "mean_post_cancel_dispatches": 2.0098,
+      "mean_orphaned_calls": 1.519,
+      "mean_cancel_latency_steps": 4.0098,
+      "post_cancel_side_effect_rate": 0.2472,
+      "cancel_compliance_rate": 0.0
+    },
+    {
+      "policy": "shielded_section",
+      "episodes": 6000,
+      "mean_post_cancel_dispatches": 0.2472,
+      "mean_orphaned_calls": 0.7637,
+      "mean_cancel_latency_steps": 2.2472,
+      "post_cancel_side_effect_rate": 0.2472,
+      "cancel_compliance_rate": 0.7528
+    }
+  ],
+  "interpretation_warning": "Synthetic simulator results only; not measurements of deployed agents."
+}

@@ -1,0 +1,5 @@
+policy,episodes,mean_post_cancel_dispatches,mean_orphaned_calls,mean_cancel_latency_steps,post_cancel_side_effect_rate,cancel_compliance_rate
+cooperative,6000,0.0,0.0,1.0,0.19,0.81
+polling,6000,1.0,0.7553,2.0,0.1215,0.0
+cancellation_blind,6000,2.0098,1.519,4.0098,0.2472,0.0
+shielded_section,6000,0.2472,0.7637,2.2472,0.2472,0.7528

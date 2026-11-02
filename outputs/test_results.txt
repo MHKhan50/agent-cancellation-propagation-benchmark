@@ -1,0 +1,10 @@
+test_blind_continues (test_benchmark.BenchmarkTests.test_blind_continues) ... ok
+test_cooperative_stops_dispatch (test_benchmark.BenchmarkTests.test_cooperative_stops_dispatch) ... ok
+test_deterministic_generation (test_benchmark.BenchmarkTests.test_deterministic_generation) ... ok
+test_four_policies_per_scenario (test_benchmark.BenchmarkTests.test_four_policies_per_scenario) ... ok
+test_summary_shape (test_benchmark.BenchmarkTests.test_summary_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
