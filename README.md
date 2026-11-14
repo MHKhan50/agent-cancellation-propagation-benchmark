@@ -1,5 +1,7 @@
 # Agent Cancellation Propagation Benchmark (ACPB)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24227759.svg)](https://doi.org/10.5281/zenodo.24227759)
+
 **Version:** 0.1.1 | **Research date:** 1 November 2026 | **Author:** Muzammal Hussain
 
 ## Research question
