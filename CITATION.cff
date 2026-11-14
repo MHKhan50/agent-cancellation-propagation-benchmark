@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Agent Cancellation Propagation Benchmark (ACPB)"
+version: 0.1.1
+date-released: 2026-11-14
+type: software
+authors:
+  - family-names: Hussain
+    given-names: Muzammal
+    orcid: "https://orcid.org/0009-0001-2570-5686"
+repository-code: "https://github.com/MHKhan50/agent-cancellation-propagation-benchmark"
+license: MIT
+keywords:
+  - agentic AI
+  - cancellation
+  - tool-using agents
+  - synthetic benchmark
